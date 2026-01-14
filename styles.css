@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #003366; /* الكحلي */
+    --secondary-color: #808080; /* الرصاصي */
+    --background-color: #f5f5f5; /* خلفية فاتحة */
+    --text-color: #333; /* نص داكن */
+}
+
+body {
+    font-family: 'Tajawal', Arial, sans-serif; /* خط عربي واضح */
+    direction: rtl; /* دعم العربية */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005599; /* لون كحلي أفتح عند التمرير */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
